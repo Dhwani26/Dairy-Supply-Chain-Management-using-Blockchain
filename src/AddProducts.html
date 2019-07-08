@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel = "stylesheet" type="text/css" href="css/styles.css">
+            <link rel="stylesheet" href="css/css1.css">
+    </head>
+    <body>
+
+        <form onsubmit="App.addP() ; return false;">
+            <div class="container">
+              <h1>Add Dairy Products</h1>
+              <hr>
+              <label for="name"><b>Name</b></label>
+              <select id = "productSelect"><option value="Butter">Butter</option>
+                <option value="Cheese">Cheese</option>
+                <option value="IceCream">IceCream</option>
+                <option value="Buttermilk">Buttermilk</option>
+                <option value="Yogurt">Yogurt</option></select><br><br>
+
+          
+              <label for="fat"><b>Fat</b></label>
+              <input type="number" placeholder="Enter here" id = "ap_fat" required><br>
+          
+              <label for="protien"><b>Protien</b></label>
+              <input type="number" placeholder="Enter here" id ="ap_protien" required><br>
+          
+              <label for="carb"><b>Carbohydrates</b></label>
+              <input type="number" placeholder="Enter here" id = "ap_carb" required><br>
+          
+              <label for="calories"><b>Calories present</b></label>
+              <input type="number" placeholder="Enter here" id = "ap_calories" required><br>
+
+              <label for="price"><b>Price</b></label>
+              <input type="number" placeholder="Enter here" id = "ap_price" required><br>
+
+              <label for="quantity"><b>Quantity(No of Units)</b></label>
+              <input type="number" placeholder="Enter here" id = "ap_quantity" required><br>
+          
+              <hr>
+        
+              <button type="submit" class="registerbtn">Add</button>
+              <button type = "reset" class = "registerbtn">Cancel</button>
+            </div>
+            
+          </form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>      
+          
+    </body>
+</html>

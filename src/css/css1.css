@@ -1,0 +1,47 @@
+body{
+    font-family:monospace;
+    background-image:url('image.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment:fixed; 
+    background-size: 100% 100%;
+}
+
+.box{
+    color:white;
+    font-size:180%;
+    text-align:center;
+    margin:0px;
+}
+.head{
+    background-color:rgba(33,47,61,1);
+    color:white;
+    font-size:180%;
+    text-align:center;
+    margin:0px;
+
+}
+
+.block{
+    border:1px solid rgba(33,47,61);
+    margin:10px;
+    display:inline-block;
+    border-radius:10px;
+}
+.blue{
+    background-color:rgba(33,47,61,1);
+    color:white;
+    padding:10px;
+    border-collapse:collapse;
+    border-radius:10px 10px 0px 0px;
+    }
+.inside{
+   background-color:rgb(229,232,232);
+   padding:20px;
+   border-radius:0px 0px 10px 10px;
+}
+
+.thumbnail{
+    width: 75px;
+    height: 125px;
+}

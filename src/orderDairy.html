@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="css/css1.css">
+      <link rel = "stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+
+        <form onsubmit="App.orderDairy(); return false;">
+            <div class="container">
+              <h1>Order Dairy Products</h1>
+              <hr>
+              <!--<label for="ItemId"><b>ItemId</b></label><br>
+              <label id = "or_itemId">default</label><br><br> -->
+              
+          
+              <label for="quantity"><b>Quantity</b></label>
+              <input type="number" placeholder="Enter here" id = "op_quantity" min="0" required><br>
+          
+              <hr>
+        
+              <button type="submit" class="registerbtn" id= "or_order">Order</button>
+              <button type = "reset" class = "registerbtn">Cancel</button>
+            </div>
+            
+          </form>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>     
+          
+    </body>
+</html>

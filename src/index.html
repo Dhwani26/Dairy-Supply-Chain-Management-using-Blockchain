@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HomePage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel = "stylesheet" type="text/css" href="css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid" style="background-color:rgba(33,47,61);">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><b>Dairy </b></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown" id = "farmer"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Farmer<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="AddRaw.html">Add raw materials</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" id ="producer"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Producer<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="listRaw.html">Order raw materials</a></li>
+                <li><a href="AddProducts.html">Add Dairy Products</a></li>
+                <li><a href="AddProductsToWarehouse.html">Add products to Warehouse</a></li>
+              </ul>
+              </li>
+              <li class="dropdown" id ="warehouseOwner"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WarehouseOwner<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="warehouse.html">Create Warehouse</a></li>
+                </ul>
+              </li>
+            <li class="dropdown" id = "customer"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="ListProducts.html">Order Dairy Products</a></li>
+              </ul>
+            </li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li id ="signUp"><a href="register.html" ><span class="glyphicon glyphicon-user"  ></span> Register</a></li>
+          <li id = "login"><a href="login.html" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li id = "logout" style="display: none;"><a href="#"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <div class="raw">
+      <div class="col-sm-3">
+      <br>
+      <div class="block">
+          <div class="blue">Products that we sell</div>
+           <center> 
+            <img class="mySlides" src="butter.jpg" width="100%" height="240px" style="margin:0px;border-radius:0px 0px 10px 10px;">
+            <img class="mySlides" src="icecream.jpg" width="100%" height="240px" style="margin:0px;border-radius:0px 0px 10px 10px;">
+            <img class="mySlides" src="yogurt.jpg" width="100%" height="240px" style="margin:0px;border-radius:0px 0px 10px 10px;">
+            <img class="mySlides" src="cheese.jpg" width="100%" height="240px" style="margin:0px;border-radius:0px 0px 10px 10px;">
+            <img class="mySlides" src="milk.jpg" width="100%" height="240px" style="margin:0px;border-radius:0px 0px 10px 10px;">
+           </center></div>
+          </div>
+   <br>
+            <div class="col-sm-3">
+              <div class="block">
+                  <div class="blue"> Access Manufacturing Capacity</div>
+                  <div style="background-color:rgba(180,180,190,0.3);border-radius: 0px 0px 10px 10px;">
+
+                
+                  <img src="https://syncfab.com/assets/img/home/step-1.svg" width="100%" height="160px"/> <br>
+                  <div class="blue" style="border-radius:0px 0px 10px 10px;">
+                      Get the best quotes from a pre-qualified manufacturing network when you need it.</div>
+              </div></div></div>
+              <div class="col-sm-3">
+                  <div class="block">
+                      <div class="blue">Secure Blockchain Order Process</div>
+                      
+                      <div style="background-color:rgba(180,180,190,0.3);border-radius: 0px 0px 10px 10px;">
+
+                    
+                      <img src="https://syncfab.com/assets/img/home/step-2.svg" width="100%" height="160px"/> <br>
+                      <div class="blue" style="border-radius:0px 0px 10px 10px;">
+                          All your PO documents in one place! Securely stored on our proprietary Blockchain platform.</div>
+                  </div></div></div>
+                  <div class="col-sm-3">
+                      <div class="block">
+                          <div class="blue"> End-To-End Visibility</div>
+                          <div style="background-color:rgba(180,180,190,0.3);border-radius: 0px 0px 10px 10px;">
+
+                        
+                          <img src="https://syncfab.com/assets/img/home/step-3.svg" width="100%" height="160px"/> <br>
+                          <div class="blue" style="border-radius:0px 0px 10px 10px;">
+                              Control your supply chain with transparent order tracking allowing better exceptions handling.</div>
+                      </div></div></div>
+              
+                  </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+          <br>
+          <div class="" style="color:rgba(200,200,200,0.1);">.</div><br>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
