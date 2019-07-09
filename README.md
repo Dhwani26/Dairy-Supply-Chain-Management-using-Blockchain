@@ -41,7 +41,7 @@ We are providing a system that is more trustworthy by implementing smart contrac
 `cd project`
 
 2. I have used Pet Shop box for this. Install it from command line like this:  
-`truffle unboc pet-shop`  
+`truffle unbox pet-shop`  
 The pet-shop box will provide us with the basic directory structure. It is also configured to communicate directly with ganache.
 
 3. From the root of the project create a smart contract  
